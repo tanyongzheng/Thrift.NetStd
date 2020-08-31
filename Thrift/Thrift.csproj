@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <!--
     Licensed to the Apache Software Foundation(ASF) under one
     or more contributor license agreements.See the NOTICE file
@@ -19,9 +19,9 @@
   -->
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+	  <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
     <AssemblyName>Thrift</AssemblyName>
-    <PackageId>Thrift</PackageId>
+    <PackageId>Thrift.NetStd</PackageId>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
@@ -39,6 +39,10 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>thrift.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Authors>Thrift</Authors>
+    <Version>0.13.0</Version>
+    <PackageProjectUrl>https://github.com/apache/thrift/tree/master/lib/netstd</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
